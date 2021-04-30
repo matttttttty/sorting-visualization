@@ -23,12 +23,6 @@ class BubbleSort extends Component {
 
     return (
       <React.Fragment>
-        <form action="">
-          <label htmlFor=""></label>
-          <input type="text" />
-        </form>
-        <button onClick={() => this.props.bubblesort()}>start</button>
-        <button>setSortingBar</button>
         <ul className="container">
           {randomArray.map((num, index) => (
             <li key={index}>

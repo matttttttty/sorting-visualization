@@ -15,12 +15,12 @@ const slice = createSlice({
   },
 });
 
-const { arrayAdded } = slice.actions;
+export const { arrayAdded } = slice.actions;
 
 export const initArray = () => (dispatch, getState) => {
-  const a = getrandomArrayOfLength(300, 400);
+  // const a = getrandomArrayOfLength(100, 400);
   // console.log(a);
-  dispatch(arrayAdded(a));
+  dispatch(arrayAdded(getrandomArrayOfLength(100, 400)));
 };
 
 const sleep = (milliseconds) => {
