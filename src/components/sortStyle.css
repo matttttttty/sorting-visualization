@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  list-style: none;
+  align-items: flex-end;
+  justify-content: center;
+  border: 2px solid rgb(179, 209, 236);
+  padding-top: 3rem;
+  overflow: hidden;
+  margin: 1rem;
+}
+
+.bar {
+  width: 2px;
+  background-color: blue;
+  margin: 1px;
+}
