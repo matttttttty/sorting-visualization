@@ -62,8 +62,6 @@ export const sortAlgo = () => async (dispatch, getState) => {
     await sleep(speed);
     dispatch(arrayAdded(item));
   }
-
-  console.log(arr1);
 };
 
 export default slice.reducer;

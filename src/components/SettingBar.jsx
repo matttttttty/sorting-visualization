@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import "../components/form.css";
+import "../components/SettingBar.css";
 import {
   arrayAdded,
   sortAlgo,

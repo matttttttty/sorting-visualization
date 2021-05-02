@@ -16,6 +16,7 @@
 .label {
   border: 1px solid lightblue;
   font-size: 2rem;
+  font-weight: bold;
   margin-left: 50vw;
   color: red;
 }

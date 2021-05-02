@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { initArray, selectionsort } from "../store/bubbleSort";
-import "../components/sortStyle.css";
+import { initArray } from "../store/bubbleSort";
+import "../components/MainSort.css";
 
-class BubbleSort extends Component {
+class MainSort extends Component {
   state = {};
   componentDidMount() {
     console.log("mount");
@@ -38,5 +38,4 @@ const mapDispatchToProps = (dispatch) => ({
   settingArray: () => dispatch(initArray()),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(BubbleSort);
-// export default BubbleSort;
+export default connect(mapStateToProps, mapDispatchToProps)(MainSort);
