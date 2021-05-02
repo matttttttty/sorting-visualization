@@ -1,13 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { initArray } from "../store/bubbleSort";
+import { initArray } from "../store/sortAlgo";
 import "../components/MainSort.css";
 
 class MainSort extends Component {
-  state = {};
   componentDidMount() {
-    console.log("mount");
-
     this.props.settingArray();
   }
 

@@ -11,14 +11,20 @@
 .bodycontainer {
   border: 2px solid rgb(179, 209, 236);
   margin-top: 1rem;
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .label {
   border: 1px solid lightblue;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  /* display: inline; */
   font-weight: bold;
-  margin-left: 50vw;
-  color: red;
+  /* margin-left: 45vw; */
+  color: black;
+  margin-top: 2rem;
 }
 
 .bar {

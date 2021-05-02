@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import "../components/SettingBar.css";
-import {
-  arrayAdded,
-  sortAlgo,
-  speedAdded,
-  algoAdded,
-} from "../store/bubbleSort";
+import { arrayAdded, sortAlgo, speedAdded, algoAdded } from "../store/sortAlgo";
 import getrandomArrayOfLength from "../utils/random";
 
 const SettingBar = () => {

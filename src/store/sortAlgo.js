@@ -2,9 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 import mergeSort from "../sortingAlgo/mergesort";
 import quickSort from "../sortingAlgo/quikesort";
 import insertionsortAlgo from "../sortingAlgo/insertionsort";
-import getrandomArrayOfLength from "../utils/random";
 import selectionsortAlgo from "../sortingAlgo/selectionsort";
 import bubblesortAlgo from "../sortingAlgo/bubblesort";
+import getrandomArrayOfLength from "../utils/random";
 
 const slice = createSlice({
   name: "sortingAlgo",
