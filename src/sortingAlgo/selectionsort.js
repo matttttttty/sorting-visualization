@@ -8,7 +8,7 @@ export default function selectionsortAlgo(arr) {
         min = j;
       }
     }
-    if (min != i) {
+    if (min !== i) {
       [arr[i], arr[min]] = [arr[min], arr[i]];
     }
     arr1.push([...arr]);

@@ -3,13 +3,9 @@ import { useDispatch } from "react-redux";
 import "../components/form.css";
 import {
   arrayAdded,
-  bubblesort,
-  initArray,
-  selectionsort,
+  sortAlgo,
   speedAdded,
   algoAdded,
-  quiksort,
-  mergesort,
 } from "../store/bubbleSort";
 import getrandomArrayOfLength from "../utils/random";
 
@@ -18,11 +14,6 @@ const SettingBar = () => {
   const [speed, setSpeed] = useState(1);
   const [algo, setAlgo] = useState("BubbleSort");
   const dispatch = useDispatch();
-
-  const handleChange = (e) => {
-    // set;
-    dispatch(algoAdded({ algo: e.target.value }));
-  };
 
   return (
     <div className="form-container">
@@ -78,7 +69,7 @@ const SettingBar = () => {
           set
         </button>
       </div>
-      <button onClick={() => dispatch(selectionsort())}>start</button>
+      <button onClick={() => dispatch(sortAlgo())}>start</button>
     </div>
   );
 };

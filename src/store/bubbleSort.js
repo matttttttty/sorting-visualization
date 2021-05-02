@@ -33,7 +33,7 @@ const sleep = (milliseconds) => {
   return new Promise((resolve) => setTimeout(resolve, milliseconds));
 };
 
-export const selectionsort = () => async (dispatch, getState) => {
+export const sortAlgo = () => async (dispatch, getState) => {
   const arr = [...getState().list];
   const speed = getState().speed;
   const algo = getState().algo;
@@ -54,6 +54,8 @@ export const selectionsort = () => async (dispatch, getState) => {
       break;
     case "mergesort":
       arr1 = mergeSort(arr);
+      break;
+    default:
       break;
   }
   for (const item of arr1) {
