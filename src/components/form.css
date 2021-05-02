@@ -13,7 +13,8 @@ body {
   border: 2px solid lightblue;
 }
 input[type="number"],
-input[type="email"] {
+input[type="email"],
+.input {
   border: 1px solid lightblue;
   border-radius: 5px;
   padding: 0.5rem 0.7rem;

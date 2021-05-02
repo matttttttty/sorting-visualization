@@ -3,9 +3,20 @@
   list-style: none;
   align-items: flex-end;
   justify-content: flex-start;
-  border: 2px solid rgb(179, 209, 236);
   padding-top: 3rem;
   overflow: hidden;
+  height: 70vh;
+}
+
+.bodycontainer {
+  border: 2px solid rgb(179, 209, 236);
+  margin-top: 1rem;
+  /* display: flex; */
+}
+.label {
+  border: 1px solid lightblue;
+  font-size: 1.5rem;
+  margin-left: 50vw;
 }
 
 .bar {

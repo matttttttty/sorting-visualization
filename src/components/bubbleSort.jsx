@@ -1,14 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import {
-  bubblesort,
-  initArray,
-  selectionsort,
-  quiksort,
-  mergesort,
-} from "../store/bubbleSort";
+import { initArray, selectionsort } from "../store/bubbleSort";
 import "../components/sortStyle.css";
-import { insertionsort } from "./../store/bubbleSort";
 
 class BubbleSort extends Component {
   state = {};
@@ -19,10 +12,11 @@ class BubbleSort extends Component {
   }
 
   render() {
-    const { randomArray } = this.props;
+    const { randomArray, algo } = this.props;
 
     return (
-      <React.Fragment>
+      <div className="bodycontainer">
+        <label className="label">{algo}</label>
         <ul className="container">
           {randomArray.map((num, index) => (
             <li key={index}>
@@ -30,22 +24,18 @@ class BubbleSort extends Component {
             </li>
           ))}
         </ul>
-      </React.Fragment>
+      </div>
     );
   }
 }
 
 const mapStateToProps = (state) => ({
   randomArray: state.list,
+  algo: state.algo,
 });
 
 const mapDispatchToProps = (dispatch) => ({
   settingArray: () => dispatch(initArray()),
-  bubblesort: () => dispatch(bubblesort()),
-  selectionsort: () => dispatch(selectionsort()),
-  insertionsort: () => dispatch(insertionsort()),
-  quiksort: () => dispatch(quiksort()),
-  mergesort: () => dispatch(mergesort()),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(BubbleSort);
